@@ -4934,6 +4934,120 @@
 			</action>
 		</page>
 
+		<page name="twrp">
+			<template name="page"/>
+
+			<text style="text_l">
+				<placement x="%col1_x_header%" y="%row3_header_y%"/>
+				<text>{@twrp_tools_hdr=Twrp Tools}</text>
+			</text>
+
+			<button style="main_button">
+				<placement x="%indent%" y="%row2a_y%"/>
+				<text>{@stock_recovery_btn=Stock Recovery}</text>
+				<actions>
+					<action function="set">tw_back=twrp</action>
+					<action function="set">tw_action=stockrecovery</action>
+					<action function="set">tw_text1={@flash_stock_recovery_confirm=Flash Stock Recovery?}</action>
+					<action function="set">tw_action_text3={@flash_stock_recovery=Flashing Stock Recovery...}</action>
+					<action function="set">tw_complete_text1={@flash_stock_recovery_complete=Flash Stock Recovery Complete}</action>
+					<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+
+			<button style="main_button">
+				<placement x="%center_x%" y="%row2a_y%"/>
+				<text>{@verified_bootsigner_btn=Verified BootSigner}</text>
+				<actions>
+					<action function="set">tw_back=twrp</action>
+					<action function="set">tw_filename=/RuRuTiaSaMa/bootsigner.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_text1={@verifiedbootsigner_device_confirm=verified bootsigner?}</action>
+					<action function="set">tw_action_text1={@verifiedbootsigner_device=verified bootsigner...}</action>
+					<action function="set">tw_complete_text1={@verifiedbootsigner_device_complete=verified bootsigner Complete}</action>
+					<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+
+			<button style="main_button">
+				<placement x="%indent%" y="%row8_y%"/>
+				<text>{@wipe_battery_stats_btn=Wipe Battery Stats}</text>
+				<actions>
+					<action function="set">tw_back=twrp</action>
+					<action function="set">tw_action=wipe</action>
+					<action function="set">tw_action_param=battery</action>
+					<action function="set">tw_text1={@wipe_battery_stats_confirm=Wipe Battery Stats?}</action>
+					<action function="set">tw_action_text1={@wipe_battery_stats=Wiping Battery Stats...}</action>
+					<action function="set">tw_complete_text1={@wipe_battery_stats_complete=Wipe Battery Stats Complete}</action>
+					<action function="set">tw_slider_text={@swipe_wipe=Swipe to Wipe}</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+
+			<button style="main_button">
+				<placement x="%center_x%" y="%row8_y%"/>
+				<text>{@remove_password_btn=Remove Password}</text>
+				<actions>
+					<action function="set">tw_back=twrp</action>
+					<action function="set">tw_action=removepassword</action>
+					<action function="set">tw_text1={@remove_password_confirm=remove password?}</action>
+					<action function="set">tw_action_text1={@remove_password=remove password...}</action>
+					<action function="set">tw_complete_text1={@remove_password_complete=remove password Complete}</action>
+					<action function="set">tw_slider_text={@swipe_wipe=Swipe to Wipe}</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+
+			<button style="main_button">
+				<placement x="%center_x%" y="%row13a_y%"/>
+				<text>{@install_magisk_btn=Install Magisk}</text>
+				<actions>
+					<action function="set">tw_back=twrp</action>
+					<action function="set">tw_filename=/RuRuTiaSaMa/magisk.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip</action>
+					<action function="set">tw_text1={@installmagisk_device_confirm=install magisk?}</action>
+					<action function="set">tw_action_text1={@installmagisk_device=install magisk...}</action>
+					<action function="set">tw_complete_text1={@installmagisk_device_complete=install magisk Complete}</action>
+					<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+			
+			
+			<button style="main_button">
+				<placement x="%indent%" y="%row19_y%"/>
+				<text>{@uninstall_magisk_btn=Uninstall Magisk}</text>
+				<actions>
+					<action function="set">tw_back=twrp</action>
+					<action function="set">tw_filename=/RuRuTiaSaMa/uninstall.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip</action>
+					<action function="set">tw_text1={@uninstallmagisk_device_confirm=uninstall magisk?}</action>
+					<action function="set">tw_action_text1={@uninstallmagisk_device=uninstall magisk...}</action>
+					<action function="set">tw_complete_text1={@uninstallmagisk_device_complete=uninstall magisk Complete}</action>
+					<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+
+			<action>
+				<touch key="home"/>
+				<action function="page">main</action>
+			</action>
+
+			<action>
+				<touch key="back"/>
+				<action function="page">advanced</action>
+			</action>
+		</page>
+
 		<page name="slideout">
 			<fill color="%background_color%">
 				<placement x="0" y="%row2_header_y%" w="%screen_width%" h="%slideout_bg_height%"/>

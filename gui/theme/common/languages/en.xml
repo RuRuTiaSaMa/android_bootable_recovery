@@ -719,5 +719,35 @@
 		<string name="include_kernel_log">Include Kernel Log</string>
 		<string name="sha2_chk">Use SHA2 for hashing</string>
 		<string name="unable_set_boot_slot">Error changing bootloader boot slot to {1}</string>
+
+		<!--tools-->
+		<string name="twrp_tools_hdr">Twrp Tools</string>
+		<string name="twrp_tools">Twrp Tools</string>
+		<string name="author_twrp">by RuRuTiaSaMa  %recovery_build_date%</string>
+		<string name="author">author:RuRuTiaSaMa</string>
+		<string name="stock_recovery_btn">Stock Recovery</string>
+		<string name="flash_stock_recovery_confirm">Flash Stock Recovery?</string>
+		<string name="flash_stock_recovery">Flashing Stock Recovery...</string>
+		<string name="flash_stock_recovery_complete">Flash Stock Recovery Complete</string>
+		<string name="verified_bootsigner_btn">Verified BootSigner</string>
+		<string name="verifiedbootsigner_device_confirm">verified bootsigner?</string>
+		<string name="verifiedbootsigner_device">verified bootsigner...</string>
+		<string name="verifiedbootsigner_device_complete">verified bootsigner Complete</string>
+		<string name="wipe_battery_stats_btn">Wipe Battery Stats</string>
+		<string name="wipe_battery_stats_confirm">Wipe Battery Stats?</string>
+		<string name="wipe_battery_stats">Wiping Battery Stats...</string>
+		<string name="wipe_battery_stats_complete">Wipe Battery Stats Complete</string>
+		<string name="remove_password_btn">Remove Password</string>
+		<string name="remove_password_confirm">remove password?</string>
+		<string name="remove_password">remove password...</string>
+		<string name="remove_password_complete">remove password Complete</string>
+		<string name="install_magisk_btn">install magisk</string>
+		<string name="installmagisk_device_confirm">install magisk?</string>
+		<string name="installmagisk_device">install magisk...</string>
+		<string name="installmagisk_device_complete">install magisk Complete</string>
+		<string name="uninstall_magisk_btn">uninstall magisk</string>
+		<string name="uninstallmagisk_device_confirm">uninstall magisk?</string>
+		<string name="uninstallmagisk_device">uninstall magisk...</string>
+		<string name="uninstallmagisk_device_complete">uninstall magisk Complete</string>
 	</resources>
 </language>
